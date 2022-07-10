@@ -18,90 +18,89 @@ body {
 	height: 1000px;
 	background-color: #FFFFFF;
 }
-/* Navigation */
+
 header {
 	width: 100%;
-	height: 18%;
+	height: 20%;
+	min-height: 15%;
 	background-image: url('blue_curtain1.png');
 	background-color: #000080;
 	border-bottom: 12px solid #FFD700;
 }
-.logo {
-	width: 10%;
-	float: left;
-	margin-top: 15px;
-	margin-left: 25px;
-}
 
-.nav_menu {
-
-	float: left;
-	color: #FFFFFF;
-	font-size: 14px;
-	font-family: helvetica;
-	margin-right: 50px;
-	margin-top: 125px;
-	letter-spacing: 2px;
-	transition: all 0.3s linear;
-	text-align: right;
-	display: inline;
-
-}
-
+/* Navigation */
 
 nav {
+	position: relative;
 	width: 100%;
-	text-align: right;
-	margin-right: 25px;
+	text-align: center;
 }
-header nav ul {
-	list-style: none;
-	float: right;
-}
+
 nav ul li {
-	float: left;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-family: helvetica;
-	text-align: left;
-	margin-right: 50px;
-	margin-top: 125px;
-	letter-spacing: 2px;
-	transition: all 0.3s linear;
+	display: inline-block;
+	letter-spacing: .1em;
+	margin-right: 3em;
 	}
 
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
+	display: inline-block;
+
 }
 ul li:hover a {
 	color: #2C9AB7;
+	padding-bottom: 3px;
 	border-spacing: 2px;
 	border-bottom: 1px solid #2C9AB7;
 }
 
-.header_title {
+
+ header h1 {
 	color: #FFFFFF;
+	font-family: Helvetica Neue;
+	font-size: 75px;
+	letter-spacing: 3px;
+	padding-top: 0px;
+	padding-bottom: .075em;
+	line-height: 0%;
+	text-align: center;
+}
 
-	margin-top: 0px;
-	font-size: 65px;
-	float: center;
-	letter-spacing: 4px;
-
+header h3 {
+	color: #FFFFFF;
+	font-family: Baskerville;
+	font-weight: normal;
+	font-size: 25px;
+	padding-top: 2%;
+	padding-bottom: none;
+	text-align: center;
 }
 
 
-.hero_header {
-	color: #FFFFFF;
-	text-align: center;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: px;
-	margin-left: 0px;
-	letter-spacing: 4px;
+.logo {
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 5em;
+	margin-right: 0%;
 }
 
 /* Hero Section */
+
+.hero {
+	width: 100%;
+	height: 20%;
+	min-height: 15%;
+	background-image: url("lodgecollage_001.png");
+	background-repeat: no-repeat;
+	padding-top: 15%;
+	padding-bottom: 15%;
+
+}
 
 .light {
 	font-weight: bold;
@@ -286,7 +285,9 @@ footer {
 	display: none;
 }
 
-/* Mobile */
+
+/* Mobile --------- Mobile ----------- Mobile--------- Mobile ----------- Mobile--------- Mobile ----------- Mobile--------- Mobile ----------- Mobile*/
+
 @media (max-width: 320px) {
 .logo {
 	width: 100%;
@@ -313,6 +314,27 @@ nav ul li {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	width: 100%;
+	text-align: center;
+}
+
+ header h1 {
+	color: #FFFFFF;
+	font-family: Helvetica Neue;
+	font-size: 75px;
+	letter-spacing: 3px;
+	padding-top: 0px;
+	padding-bottom: .075em;
+	line-height: 0%;
+	text-align: center;
+}
+
+header h3 {
+	color: #FFFFFF;
+	font-family: Baskerville;
+	font-weight: normal;
+	font-size: 25px;
+	padding-top: 2%;
+	padding-bottom: none;
 	text-align: center;
 }
 
@@ -367,7 +389,8 @@ nav ul li {
 
 }
 
-/* Small Tablets */
+/* Small Tablets ------------Small Tablets ------------Small Tablets ------------Small Tablets ------------Small Tablets ------------Small Tablets ------------ */
+
 @media (min-width: 321px)and (max-width: 767px) {
 .logo {
 	width: 100%;
@@ -403,6 +426,28 @@ nav ul li {
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
+
+ header h1 {
+	color: #FFFFFF;
+	font-family: Helvetica Neue;
+	font-size: 75px;
+	letter-spacing: 3px;
+	padding-top: 0px;
+	padding-bottom: .075em;
+	line-height: 0%;
+	text-align: center;
+}
+
+header h3 {
+	color: #FFFFFF;
+	font-family: Baskerville;
+	font-weight: normal;
+	font-size: 25px;
+	padding-top: 2%;
+	padding-bottom: none;
+	text-align: center;
+}
+
 .text_column {
 	width: 100%;
 	text-align: left;
@@ -474,13 +519,35 @@ nav ul li {
 }
 }
 
-/* Small Desktops */
+/* Small Desktops-----------Small Desktops-----------Small Desktops-----------Small Desktops-----------Small Desktops-----------Small Desktops----------- */
+
 @media (min-width: 768px) and (max-width: 1096px) {
 .text_column {
 	width: 100%;
 }
 .thumbnail {
 	width: 50%;
+}
+
+ header h1 {
+	color: #FFFFFF;
+	font-family: Helvetica Neue;
+	font-size: 75px;
+	letter-spacing: 3px;
+	padding-top: 0px;
+	padding-bottom: .075em;
+	line-height: 0%;
+	text-align: center;
+}
+
+header h3 {
+	color: #FFFFFF;
+	font-family: Baskerville;
+	font-weight: normal;
+	font-size: 25px;
+	padding-top: 2%;
+	padding-bottom: none;
+	text-align: center;
 }
 .text_column {
 	width: 100%;
