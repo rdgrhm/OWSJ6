@@ -80,6 +80,11 @@ header h3 {
 	text-align: center;
 }
 
+hr {
+	display: block;
+    width: 25%;
+}
+
 
 .logo {
 	float: left;
@@ -93,68 +98,92 @@ header h3 {
 
 .hero {
 	width: 100%;
-	height: 20%;
+	height: 30%;
 	min-height: 15%;
 	background-image: url("lodgecollage_001.png");
 	background-repeat: no-repeat;
-	padding-top: 15%;
-	padding-bottom: 15%;
-
 }
 
 .light {
 	font-weight: bold;
 	color: #717070;
 }
-.tagline {
+/*.tagline {
 	text-align: center;
 	color: #FFFFFF;
 	margin-top: 4px;
 	font-weight: lighter;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-}
+}*/
 /* About Section */
-.text_column {
-	width: 29%;
-	text-align: justify;
+
+.center_column {
+	font-family: Times New Roman;
+	font-style:  italic;
+	font-size: 2em;
+	width: 75%;
+	margin: auto;
+	text-align: center;
 	font-weight: lighter;
-	line-height: 25px;
-	float: left;
-	padding-left: 20px;
-	padding-right: 20px;
+	line-height: 1.5em;
 	color: #A3A3A3;
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 .about {
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 35px;
+	padding-top: 2%;
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
 }
 /* Stats Gallery */
 .stats {
-	color: #717070;
-	margin-bottom: 5px;
+text-align: center;
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
+
+
+.gallery h1 {
+	color: #FFFFFF;
+
+}
+
+
+.gallery a { 
+ text-decoration: none; 
+ color: #FFFFFF; 
+}
+
+.gallery h1 a:hover {  
+ color: #FFFFFF; 
+ border-spacing: 2px;
+ border-bottom: 2px solid #FFFFFF;
+}
+
+.gallery a:visited { 
+ text-decoration: none; 
+ color: #FFFFFF; 
+}
+
 .gallery {
-	clear: both;
 	display: inline-block;
 	width: 100%;
 	background-color: #FFFFFF;
-	/* [disabled]min-width: 400px;
-*/
-	padding-bottom: 35px;
-	padding-top: 0px;
-	margin-top: -5px;
-	margin-bottom: 0px;
+	/*[disabled]min-width: 400px; */
+	padding-bottom: 35px; 
+	position: relative;
+
 }
 .thumbnail {
 	width: 25%;
 	text-align: center;
 	float: left;
 	margin-top: 35px;
+	position: relative;
 }
 .gallery .thumbnail h4 {
 	margin-top: 5px;
