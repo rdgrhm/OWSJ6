@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Body */
 body {
 	font-family: arial; /*source-sans-pro*/
@@ -10,9 +11,10 @@ body {
 	font-style: normal;
 	font-weight: 200;
 }
+
 /* Container */
 .container {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 1000px;
@@ -45,13 +47,13 @@ nav ul li {
 	margin-right: 3em;
 	}
 
-ul li a {
+nav ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
 	display: inline-block;
 
 }
-ul li:hover a {
+nav ul li:hover a {
 	color: #2C9AB7;
 	padding-bottom: 3px;
 	border-spacing: 2px;
@@ -67,7 +69,7 @@ ul li:hover a {
 	padding-top: 0px;
 	padding-bottom: .075em;
 	line-height: 0%;
-	text-align: center;
+	text-align: Center;
 }
 
 header h3 {
@@ -85,7 +87,6 @@ hr {
     width: 25%;
 }
 
-
 .logo {
 	float: left;
 	margin-top: 2%;
@@ -94,14 +95,22 @@ hr {
 	margin-right: 0%;
 }
 
+.footerlogo {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
 /* Hero Section */
 
 .hero {
 	width: 100%;
-	height: 30%;
+	height: 40%;
 	min-height: 15%;
 	background-image: url("lodgecollage_001.png");
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .light {
@@ -202,7 +211,7 @@ transform: translate(-50%, -50%);
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
+	padding-top: .175em;
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -231,38 +240,95 @@ transform: translate(-50%, -50%);
 }
 /* More info */
 footer {
-	background-color: #FFFFFF;
+	background-color: none;
 	padding-bottom: 35px;
+	display: block;
+	text-align: left;
 }
 .footer_column {
-	width: 50%;
+	width: 25%;
+	text-align: left;
+	padding-top: 30px;
+	float: left;
+	}
+
+#footer_column1 {
+	width: 25%;
+
 	text-align: center;
 	padding-top: 30px;
 	float: left;
 }
+
 footer .footer_column h3 {
-	color: #B3B3B3;
-	text-align: center;
+	color: #FFFFFF;
+	text-align: left;
 }
 footer .footer_column p {
-	color: #717070;
-	background-color: #FFFFFF;
+	color: #FFFFFF;
+	background-color: none;
+	text-align: left;
 }
+
+footer .footer_column #ftrglink ul li {
+	color: #FFFFFF;
+	background-color: none;
+	text-align: left;
+}
+
 .cards {
 	width: 150px;
 	height: 150px;
+	background-color: skyblue;
+
 	/* max-width: 400px;
 	max-height: 200px;*/
+
 }
+
+.ftrglink{
+	list-style: none;
+	display: block;
+	text-align: left;
+	margin-left: 0px;
+}
+
+
+.ftrglink ul li {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: helvetica;
+	display: block;
+	text-align: left;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	margin-right: 3em;
+	margin-left: none;
+	}
+
+.ftrglink ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+
+}
+
+.ftrglink ul li:hover a {
+	color: #2C9AB7;
+
+}
+
+
 footer .footer_column p {
-	padding-left: 30px;
+	
 	padding-right: 30px;
-	text-align: justify;
+	text-align: left;
 	line-height: 25px;
 	font-weight: lighter;
-	margin-left: 20px;
+	
 	margin-right: 20px;
 }
+
 .button {
 	width: 200px;
 	margin-top: 40px;
@@ -283,11 +349,13 @@ footer .footer_column p {
 	color: #FFFFFF;
 	transition: all 0.3s linear;
 }
+
 .button:hover {
 	background-color: #FEFEFE;
 	color: #C4C4C4;
 	cursor: pointer;
 }
+
 .copyright {
 	text-align: center;
 	padding-top: 20px;
@@ -299,6 +367,7 @@ footer .footer_column p {
 	letter-spacing: 2px;
 	border-top-width: 2px;
 }
+
 .footer_banner {
 	background-color: #B3B3B3;
 	padding-top: 60px;
@@ -307,9 +376,11 @@ footer .footer_column p {
 	background-image: url(../images/pattern.png);
 	background-repeat: repeat;
 }
+
 footer {
 	display: inline-block;
 }
+
 .hidden {
 	display: none;
 }
@@ -349,7 +420,7 @@ nav ul li {
  header h1 {
 	color: #FFFFFF;
 	font-family: Helvetica Neue;
-	font-size: 75px;
+	font-size: .15em;
 	letter-spacing: 3px;
 	padding-top: 0px;
 	padding-bottom: .075em;
@@ -411,6 +482,7 @@ header h3 {
 .banner {
 	background-color: #2D9AB7;
 	background-image: none;
+	padding-top: .075em;
 }
 .tagline {
 	margin-top: 20px;
@@ -550,7 +622,7 @@ header h3 {
 
 /* Small Desktops-----------Small Desktops-----------Small Desktops-----------Small Desktops-----------Small Desktops-----------Small Desktops----------- */
 
-@media (min-width: 768px) and (max-width: 1096px) {
+@media (min-width: 768px) and (max-width: 1220px) {
 .text_column {
 	width: 100%;
 }
@@ -565,7 +637,6 @@ header h3 {
 	letter-spacing: 3px;
 	padding-top: 0px;
 	padding-bottom: .075em;
-	line-height: 0%;
 	text-align: center;
 }
 
